@@ -95,3 +95,44 @@ function ex7() {
   }
   document.getElementById("ex7").innerHTML = text;
 }
+
+// ex8
+function ex8() {
+  const min = 1;
+  const max = 10;
+  let rand = Math.ceil(Math.random() * max);
+  console.log(rand);
+  let iNum = prompt(`Enter a number between ${min} and ${max} inclusive:`);
+
+  if (iNum == rand) document.getElementById("ex8").innerHTML = "Matched";
+  else document.getElementById("ex8").innerHTML = 
+    `Not matched, the number was ${iNum}`
+}
+
+// ex9
+function ex9() {
+  let today = new Date();
+  let christmas = new Date(today.getFullYear(), 11, 25);
+  let one_date = 1000 * 3600 * 24;
+
+  if (today.getMonth() == 11 && today.getDay > 25) 
+    christmas.setFullYear(christmas.getFullYear() + 1);
+
+  document.getElementById("ex9").innerHTML = 
+    Math.floor((christmas.getTime() - today.getTime()) / one_date) + " days left until Christmas.";
+}
+
+// ex10
+function ex10Multiply() {
+  let a = document.getElementById("ex10-num1").value;
+  let b = document.getElementById("ex10-num2").value;
+
+  document.getElementById("ex10").innerHTML = a * b;
+}
+
+function ex10Divide() {
+  let a = document.getElementById("ex10-num1").value;
+  let b = document.getElementById("ex10-num2").value;
+
+  document.getElementById("ex10").innerHTML = a / b;
+}

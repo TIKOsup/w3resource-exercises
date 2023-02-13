@@ -12,11 +12,14 @@
   <h2>1.</h2>
   <button onclick="currentTime()">Current time</button>
   <p id="ex1"></p>
+
   <h2>2.</h2>
   <button onclick="printWindow()">Print this window</button>
+
   <h2>3.</h2>
   <button onclick="currentDate()">Current date</button>
   <p id="ex3"></p>
+
   <h2>4.</h2>
   <p>Enter triangle's sides:</p>
   <input type="number" name="a" id="a">
@@ -24,6 +27,21 @@
   <input type="number" name="c" id="c">
   <button onclick="triangleArea()">Triangle's area</button>
   <p id="ex4"></p>
+
+  <h2>5.</h2>
+  <p id="ex5">w3resource</p>
+  <button id="ex5-start-btn" onclick="rotateStrRight()">Start</button>
+  <button id="ex5-stop-btn" hidden onclick="stopRotateStr()">Stop</button>
+
+  <h2>6.</h2>
+  <label for="leap-year">Enter a year:</label>
+  <input type="number" name="leap-year" id="leap-year">
+  <button onclick="ex6()">Determine a leap year</button>
+  <p id="ex6"></p>
+
+  <h2>7.</h2>
+  <button onclick="ex7()">Show year</button>
+  <p id="ex7"></p>
 
   <script src="./script.js"></script>
 </body>

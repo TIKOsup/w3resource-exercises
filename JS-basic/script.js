@@ -31,11 +31,67 @@ function currentDate() {
 
 // ex4
 function triangleArea() {
-  let a = document.getElementById("a").value;
-  let b = document.getElementById("b").value;
-  let c = document.getElementById("c").value;
+  const a = document.getElementById("a").value;
+  const b = document.getElementById("b").value;
+  const c = document.getElementById("c").value;
 
-  if (a == "" || b == "" || c == "") document.getElementById("ex4").innerHTML = "Fill triangle's sides first!";
+  if (a == "" || b == "" || c == "") 
+    document.getElementById("ex4").innerHTML = "Fill triangle's sides first!";
   let s = ((parseInt(a) + parseInt(b) + parseInt(c)) / 2);
-  document.getElementById("ex4").innerHTML = Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2);
+  document.getElementById("ex4").innerHTML = 
+    Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2);
+}
+
+// ex5
+let interval;
+
+function rotateStrRight() {
+  const element = document.getElementById("ex5");
+  const strNode = element.childNodes[0];
+  let str = strNode.data;
+
+  interval = setInterval(() => {
+    str = str[str.length - 1] + str.substring(0, str.length - 1);
+    strNode.data = str;
+  }, 100);
+
+  document.getElementById("ex5-start-btn").hidden = true;
+  document.getElementById("ex5-stop-btn").hidden = false;
+}
+
+function stopRotateStr() {
+  clearInterval(interval);
+  document.getElementById("ex5-start-btn").hidden = false;
+  document.getElementById("ex5-stop-btn").hidden = true;
+}
+
+// ex6
+function ex6() {
+  const year = document.getElementById("leap-year").value;
+
+  if (year == "") 
+    document.getElementById("ex6").innerHTML = "Enter a year first!"
+  else {
+    document.getElementById("ex6").innerHTML = isLeapYear(year);
+  }
+}
+
+function isLeapYear(year) {
+  return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+
+// ex7
+function ex7() {
+  let date = new Date();
+  let i = 2014;
+  let text = "";
+
+  while (i <= 2050) {
+    date.setFullYear(i, 0, 1);
+    if (date.getDay() === 0) {
+      text += `1st January is being a Sunday ${date.getFullYear()}<br>`;
+    }
+    i++;
+  }
+  document.getElementById("ex7").innerHTML = text;
 }

@@ -19,20 +19,28 @@
       </nav>
     </header>
     <main>
-      <div>
-        <h1>JavaScript basic</h1>
-        <hr>
-        <h2>1.</h2>
-        <button onclick="currentTime()">Current time</button>
-        <p id="ex1"></p>
-      
-        <h2>2.</h2>
-        <button onclick="printWindow()">Print this window</button>
-      
-        <h2>3.</h2>
-        <button onclick="currentDate()">Current date</button>
-        <p id="ex3"></p>
-      
+      <h1 class="pb-4 text-center fs-1 fw-bold">JavaScript Basic</h1>
+      <div class="sections row row-cols-3">
+        <section class="col-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">1. Display the current day and time.</h2>
+            <button onclick="currentTime()" class="btn btn-sm btn-primary mb-2">Current time</button>
+            <p id="ex1"></p>
+          </div>
+        </section>
+        <section class="col-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">2. Print the content of the current page.</h2>
+            <button onclick="printWindow()" class="btn btn-sm btn-primary md-2">Print this window</button>
+          </div>
+        </section>
+        <section class="col-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">3. Get current Date.</h2>
+            <button onclick="currentDate()" class="btn btn-sm btn-primary mb-2">Current date</button>
+            <p id="ex3"></p>
+          </div>
+        </section>
         <h2>4.</h2>
         <p>Enter triangle's sides:</p>
         <input type="number" name="a" id="a">

@@ -44,10 +44,10 @@
         <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">4. Area of a triangle.</h2>
-            <p>Enter triangle's sides:</p>
-            <input type="number" name="a" id="a" class="mb-2">
-            <input type="number" name="b" id="b" class="mb-2">
-            <input type="number" name="c" id="c" class="mb-2">
+            <label class="form-label">Enter triangle's sides:</label>
+            <input type="number" name="a" id="a" class="mb-2 form-control">
+            <input type="number" name="b" id="b" class="mb-2 form-control">
+            <input type="number" name="c" id="c" class="mb-2 form-control">
             <br>
             <button onclick="triangleArea()" class="btn btn-outline-primary mb-2">Triangle's area</button>
             <p id="ex4"></p>
@@ -64,8 +64,8 @@
         <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">6. Determine a leap year.</h2>
-            <label for="leap-year">Enter a year:</label>
-            <input type="number" name="leap-year" id="leap-year" placeholder="Enter a year" class="mb-2">
+            <label for="leap-year" class="form-label">Enter a year:</label>
+            <input type="number" name="leap-year" id="leap-year" placeholder="Enter a year" class="mb-2 form-control">
             <button class="btn btn-outline-primary" onclick="ex6()">Determine a leap year</button>
             <p id="ex6"></p>
           </div>
@@ -94,12 +94,10 @@
         <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">10. Enter two numbers to action with them.</h2>
-            <label for="num1">1st Number:</label>
-            <input type="number" name="num1" id="ex10-num1" class="mb-2">
-            <br>
-            <label for="num2">2nd Number:</label>
-            <input type="number" name="num2" id="ex10-num2" class="mb-2">
-            <br>
+            <label for="num1" class="form-label">1st Number:</label>
+            <input type="number" name="num1" id="ex10-num1" class="mb-2 form-control">
+            <label for="num2" class="form-label">2nd Number:</label>
+            <input type="number" name="num2" id="ex10-num2" class="mb-2 form-control">
             <button class="btn btn-outline-primary" onclick="ex10Multiply()">Multiply</button>
             <button class="btn btn-outline-primary" onclick="ex10Divide()">Divide</button>
             <p id="ex10"></p>

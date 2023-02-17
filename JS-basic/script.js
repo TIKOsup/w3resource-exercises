@@ -127,12 +127,13 @@ function ex10Multiply() {
   let a = document.getElementById("ex10-num1").value;
   let b = document.getElementById("ex10-num2").value;
 
-  document.getElementById("ex10").innerHTML = a * b;
+  document.getElementById("ex10").innerHTML = "The result is: " + a * b;
 }
 
 function ex10Divide() {
   let a = document.getElementById("ex10-num1").value;
   let b = document.getElementById("ex10-num2").value;
 
-  document.getElementById("ex10").innerHTML = a / b;
+  document.getElementById("ex10").innerHTML = "The result is: " + a / b;
 }
+

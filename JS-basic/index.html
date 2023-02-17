@@ -21,45 +21,56 @@
     <main>
       <h1 class="pb-4 text-center fs-1 fw-bold">JavaScript Basic</h1>
       <div class="sections row row-cols-3">
-        <section class="col-4">
+        <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">1. Display the current day and time.</h2>
-            <button onclick="currentTime()" class="btn btn-sm btn-primary mb-2">Current time</button>
+            <button onclick="currentTime()" class="btn btn-outline-primary mb-2">Current time</button>
             <p id="ex1"></p>
           </div>
         </section>
-        <section class="col-4">
+        <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">2. Print the content of the current page.</h2>
-            <button onclick="printWindow()" class="btn btn-sm btn-primary md-2">Print this window</button>
+            <button onclick="printWindow()" class="btn btn-outline-primary md-2">Print this window</button>
           </div>
         </section>
-        <section class="col-4">
+        <section class="col-4 mb-4">
           <div class="h-100 p-4 bg-light rounded-3">
             <h2 class="fs-6">3. Get current Date.</h2>
-            <button onclick="currentDate()" class="btn btn-sm btn-primary mb-2">Current date</button>
+            <button onclick="currentDate()" class="btn btn-outline-primary mb-2">Current date</button>
             <p id="ex3"></p>
           </div>
         </section>
-        <h2>4.</h2>
-        <p>Enter triangle's sides:</p>
-        <input type="number" name="a" id="a">
-        <input type="number" name="b" id="b">
-        <input type="number" name="c" id="c">
-        <button onclick="triangleArea()">Triangle's area</button>
-        <p id="ex4"></p>
-      
-        <h2>5.</h2>
-        <p id="ex5">w3resource</p>
-        <button id="ex5-start-btn" onclick="rotateStrRight()">Start</button>
-        <button id="ex5-stop-btn" hidden onclick="stopRotateStr()">Stop</button>
-      
-        <h2>6.</h2>
-        <label for="leap-year">Enter a year:</label>
-        <input type="number" name="leap-year" id="leap-year">
-        <button onclick="ex6()">Determine a leap year</button>
-        <p id="ex6"></p>
-      
+        <section class="col-4 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">4. Area of a triangle.</h2>
+            <p>Enter triangle's sides:</p>
+            <input type="number" name="a" id="a" class="mb-2">
+            <input type="number" name="b" id="b" class="mb-2">
+            <input type="number" name="c" id="c" class="mb-2">
+            <br>
+            <button onclick="triangleArea()" class="btn btn-outline-primary mb-2">Triangle's area</button>
+            <p id="ex4"></p>
+          </div>
+        </section>
+        <section class="col-4 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">5. Rotate string.</h2>
+            <p id="ex5">w3resource</p>
+            <button class="btn btn-outline-primary" id="ex5-start-btn" onclick="rotateStrRight()">Start</button>
+            <button class="btn btn-outline-primary" id="ex5-stop-btn" hidden onclick="stopRotateStr()">Stop</button>
+          </div>
+        </section>
+        <section class="col-4 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">6. Determine a leap year.</h2>
+            <label for="leap-year">Enter a year:</label>
+            <input type="number" name="leap-year" id="leap-year" placeholder="Enter a year" class="mb-2">
+            <button class="btn btn-outline-primary" onclick="ex6()">Determine a leap year</button>
+            <p id="ex6"></p>
+          </div>
+        </section>
+
         <h2>7.</h2>
         <button onclick="ex7()">Show year</button>
         <p id="ex7"></p>

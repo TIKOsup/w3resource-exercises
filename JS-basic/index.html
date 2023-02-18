@@ -103,6 +103,74 @@
             <p id="ex10"></p>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">15. Difference between a given number and 13.</h2>
+            <label for="ex15-num" class="form-label">Enter a number:</label>
+            <input type="number" id="ex15-num" class="form-control mb-2">
+            <button onclick="ex15()" class="btn btn-outline-primary">Get Difference</button>
+            <p id="ex15-res"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">16. Compute the sum of the two given integers. 
+              If the two values are same, then return triple their sum.</h2>
+            <label for="ex16-num1" class="form-label">1st number:</label>
+            <input type="number" id="ex16-num1" class="form-control mb-2">
+            <label for="ex16-num2" class="form-label">2nd number:</label>
+            <input type="number" id="ex16-num2" class="form-control mb-2">
+            <button onclick="ex16()" class="btn btn-outline-primary">Compute Sum</button>
+            <p id="ex16-res"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">17. Compute the absolute difference between a 
+              specified number and 19. Return triple their absolute difference 
+            if the specified number is greater then 19.</h2>
+            <code>result = num <= 19 ? 19 - num : (num - 19) * 3;</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">18. Check two given numbers and return true if 
+              one of the number is 50 or if their sum is 50.</h2>
+            <code>return ((num1 == 50 || num2 == 50) || (num1 + num2 == 50));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">19. Check whether a given integer is within 20 of 100 or 400.</h2>
+            <code>return ((Math.abs(100 - num) <= 20) || (Math.abs(400 - num) <= 20));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">20. Check from two given integers, whether one is 
+              positive and another one is negative.</h2>
+            <code>return ((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">21. Create a new string adding "Py" in front of 
+              a given string. If the given string begins with "Py" then 
+              return the original string.</h2>
+            <code>return (str.slice(0, 2) == "Py" ? str : "Py" + str);</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">22. Remove a character at the specified position 
+              of a given string and return the new string.</h2>
+            <code>
+              let str = "hello world"; <br>
+              let index = 1; <br>
+              return str.substring(0, index) + str.substring(index + 1, str.length);
+            </code>
+          </div>
+        </section>
       </div>
     </main>
   </div>

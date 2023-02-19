@@ -250,6 +250,40 @@
             </code>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">30. Check whether a string "Script" presents at 
+              5th (index 4) position i na given string, if "Script" presents 
+              in the string return the string without "Script" otherwise return 
+              the original one.
+            </h2>
+            <code>
+              let str = "JavaScrip"; <br>
+              return str.substring(4, 10) == "Script" ? 
+                str.substring(0, 4) + str.substring(9, str.length - 1) : str;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">31. Find the largest of three given integers.</h2>
+            <code>
+              let num1 = 1, num2 = 2, num3 = 3; <br>
+              let max-num = num1 > num2 ? num1 : num2; <br>
+              return num3 > max-num ? num3 : max-num;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">32. Find a value which is nearest to 100 from 
+              two different given integer values.</h2>
+            <code>
+              let num1 = 12, num2 = 6; <br>
+              return Math.abs(100 - num1) < Math.abs(100 - num2) ? num1 : num2;
+            </code>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="p-4 mb-4 border-top d-flex justify-content-between">

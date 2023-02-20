@@ -167,6 +167,7 @@ function fileExtension() {
   let filename = document.getElementById("ex14").value;
   document.getElementById("ex14-res").innerHTML = filename.split(".").pop();
 }
+
 // ex15
 function ex15() {
   let num = document.getElementById("ex15-num").value;

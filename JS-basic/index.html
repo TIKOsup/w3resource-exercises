@@ -103,6 +103,48 @@
             <p id="ex10"></p>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">11. Convert temperatures to and from Celsius, Fahrenheit.</h2>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="temp" id="celsius" value="1">
+              <label for="celsius" class="form-check-label">Celsius</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="temp" id="fahrenheit" value="0">
+              <label for="fahrenheit" class="form-check-label">Fahrenheit</label>
+            </div>
+            <div class="my-2">
+              <label for="temp-amount">Temperature amount:</label>
+              <input type="number" id="temp-amount" class="form-control">
+            </div>
+            <button class="btn btn-outline-primary mb-2" onclick="convertTemp()">Calculate</button>
+            <input class="form-control" id="ex11-res" type="text" value="Result" aria-label="result" readonly>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">12. Get the website URL.</h2>
+            <button onclick="currentURL()" class="btn btn-outline-primary mb-2">Current URL</button>
+            <p id="ex12"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">13. Create a variable using user-defined name.</h2>
+            <input class="form-control mb-2" type="text" id="ex13" placeholder="Enter variable name">
+            <button onclick="createVar()" class="btn btn-outline-primary mb-2">Create Variable</button>
+            <p id="ex13-res"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">14. Get extension of a filename.</h2>
+            <input class="form-control mb-2" type="text" id="ex14" placeholder="Enter variable name">
+            <button onclick="fileExtension()" class="btn btn-outline-primary mb-2">Get the extension</button>
+            <p id="ex14-res"></p>
+          </div>
+        </section>
       </div>
     </main>
   </div>

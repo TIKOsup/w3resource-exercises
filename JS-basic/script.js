@@ -137,3 +137,32 @@ function ex10Divide() {
   document.getElementById("ex10").innerHTML = "The result is: " + a / b;
 }
 
+// ex11
+function convertTemp() {
+  let res = document.getElementById("ex11-res");
+  let temp = document.getElementById("temp-amount").value;
+  if (document.querySelector('input[name="temp"]:checked').value === '1') {
+    res.value = temp * 9 / 5 + 32;
+  }
+  else {
+    res.value = (temp - 32) * 5 / 9;
+  }
+}
+
+// ex12
+function currentURL() {
+  document.getElementById("ex12").innerHTML = document.URL;
+}
+
+// ex13
+function createVar() {
+  let varName = document.getElementById("ex13");
+  this[varName] = "This variable was created with user-defined name."
+  document.getElementById("ex13-res").innerHTML = this[varName];
+}
+
+// ex14
+function fileExtension() {
+  let filename = document.getElementById("ex14").value;
+  document.getElementById("ex14-res").innerHTML = filename.split(".").pop();
+}

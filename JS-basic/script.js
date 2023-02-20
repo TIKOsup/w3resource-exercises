@@ -119,7 +119,8 @@ function ex9() {
     christmas.setFullYear(christmas.getFullYear() + 1);
 
   document.getElementById("ex9").innerHTML = 
-    Math.floor((christmas.getTime() - today.getTime()) / one_date) + " days left until Christmas.";
+    Math.floor((christmas.getTime() - today.getTime()) / one_date) 
+      + " days left until Christmas.";
 }
 
 // ex10
@@ -166,3 +167,18 @@ function fileExtension() {
   let filename = document.getElementById("ex14").value;
   document.getElementById("ex14-res").innerHTML = filename.split(".").pop();
 }
+// ex15
+function ex15() {
+  let num = document.getElementById("ex15-num").value;
+  let res = document.getElementById("ex15-res");
+  res.innerHTML = num <= 13 ? 13 - num : (num - 13) * 2;
+}
+
+// ex16
+function ex16() {
+  let num1 = parseInt(document.getElementById("ex16-num1").value);
+  let num2 = parseInt(document.getElementById("ex16-num2").value);
+  let res = document.getElementById("ex16-res");
+  res.innerHTML = num1 == num2 ? (num1 + num2) * 3 : num1 + num2;
+}
+

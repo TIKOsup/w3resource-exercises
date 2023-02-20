@@ -16,6 +16,9 @@
       </a>
       <nav class="nav">
         <a href="#" class="nav-link active text-dark text-decoration-none">JS Basic</a>
+        <a href="https://github.com/TIKOsup" class="nav-link my-auto" target="_blank">
+          <img src="./github.png" alt="github" width="30">
+        </a>
       </nav>
     </header>
     <main>
@@ -145,8 +148,195 @@
             <p id="ex14-res"></p>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">15. Difference between a given number and 13.</h2>
+            <label for="ex15-num" class="form-label">Enter a number:</label>
+            <input type="number" id="ex15-num" class="form-control mb-2">
+            <button onclick="ex15()" class="btn btn-outline-primary">Get Difference</button>
+            <p id="ex15-res"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">16. Compute the sum of the two given integers. 
+              If the two values are same, then return triple their sum.</h2>
+            <label for="ex16-num1" class="form-label">1st number:</label>
+            <input type="number" id="ex16-num1" class="form-control mb-2">
+            <label for="ex16-num2" class="form-label">2nd number:</label>
+            <input type="number" id="ex16-num2" class="form-control mb-2">
+            <button onclick="ex16()" class="btn btn-outline-primary">Compute Sum</button>
+            <p id="ex16-res"></p>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">17. Compute the absolute difference between a 
+              specified number and 19. Return triple their absolute difference 
+            if the specified number is greater then 19.</h2>
+            <code>result = num <= 19 ? 19 - num : (num - 19) * 3;</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">18. Check two given numbers and return true if 
+              one of the number is 50 or if their sum is 50.</h2>
+            <code>return ((num1 == 50 || num2 == 50) || (num1 + num2 == 50));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">19. Check whether a given integer is within 20 of 100 or 400.</h2>
+            <code>return ((Math.abs(100 - num) <= 20) || (Math.abs(400 - num) <= 20));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">20. Check from two given integers, whether one is 
+              positive and another one is negative.</h2>
+            <code>return ((num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0));</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">21. Create a new string adding "Py" in front of 
+              a given string. If the given string begins with "Py" then 
+              return the original string.</h2>
+            <code>return (str.slice(0, 2) == "Py" ? str : "Py" + str);</code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">22. Remove a character at the specified position 
+              of a given string and return the new string.</h2>
+            <code>
+              let str = "hello world"; <br>
+              let index = 1; <br>
+              return str.substring(0, index) + str.substring(index + 1, str.length);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">23. Create a new string from a given string 
+              changing the position of first and last characters. 
+              The string length must be greater than or equal to 1.</h2>
+            <code>
+              let str = "hello";
+              return str.charAt(str.length - 1) + str.slice(1, -1) + str.charAt(0);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">24. Create a new string from a given string with 
+              the first character of the given string added at the front 
+              and back.</h2>
+            <code>
+              let str = "hello"; <br>
+              return str.charAt(0) + str + str.charAt(0);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">25. Check whether a given positive number is 
+              a multiple of 3 or a multiple of 7.</h2>
+            <code>
+              let num = 15;
+              return (num % 3 == 0 || num % 7 == 0);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">26. Create a new string from a given string 
+              taking the last 3 characters and added at both the 
+              front and back.</h2>
+            <code>
+              let str = "aaabbb";
+              let last = str.substring(str.length - 3, str.length);
+              return last + str + last;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">27. Check whether a string starts with 'Java' 
+              and false otherwise.</h2>
+            <code>
+              let str = "JavaScript";
+              return (str.substring(0, 4) == "Java");
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">28. Check whether two given integer values 
+              are in the range 50 - 99.</h2>
+            <code>
+              let num = 63;
+              return (num >= 50 && num <= 99);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">29. Check whether three given integer values are 
+              in the range 50 - 99.</h2>
+            <code>
+              let num1 = 63, num2 = 12, num3 90;
+              return (num1 >= 50 && num1 <= 99) 
+                  || (num2 >= 50 && num2 <= 99) 
+                  || (num3 >= 50 && num3 <= 99);
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">30. Check whether a string "Script" presents at 
+              5th (index 4) position i na given string, if "Script" presents 
+              in the string return the string without "Script" otherwise return 
+              the original one.
+            </h2>
+            <code>
+              let str = "JavaScrip"; <br>
+              return str.substring(4, 10) == "Script" ? 
+                str.substring(0, 4) + str.substring(9, str.length - 1) : str;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">31. Find the largest of three given integers.</h2>
+            <code>
+              let num1 = 1, num2 = 2, num3 = 3; <br>
+              let max-num = num1 > num2 ? num1 : num2; <br>
+              return num3 > max-num ? num3 : max-num;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">32. Find a value which is nearest to 100 from 
+              two different given integer values.</h2>
+            <code>
+              let num1 = 12, num2 = 6; <br>
+              return Math.abs(100 - num1) < Math.abs(100 - num2) ? num1 : num2;
+            </code>
+          </div>
+        </section>
       </div>
     </main>
+    <footer class="p-4 mb-4 border-top d-flex justify-content-between">
+      <p class="text-secondary my-auto">&copy; 2023 TIKOsup</p>
+      <a href="#">
+        <img src="./logo.png" class="me-2" alt="t-letter" width="40">
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav-link active text-dark text-decoration-none">JS Basic</a>
+      </nav>
+    </footer>
   </div>
 
   <script src="./script.js"></script>

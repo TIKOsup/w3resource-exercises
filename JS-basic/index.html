@@ -358,6 +358,54 @@
             </code>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">35. Check whether a specified character exists 
+              within the 2nd to 4th position in a given string.</h2>
+            <code>
+              let str = "hello"; <br>
+              let chr = "l"; <br>
+              for (let i = 0; i < str.length; i++) {
+                if ((str.charAt(i) == chr) && (i >= 1 && i <= 3)) { <br>
+                  return true; <br>
+              } <br>
+              return false;
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">36. Check whether the last digit of the three 
+              given positive integers is same.</h2>
+            <code>
+              let num1 = 26, num2 = 36, num3 = 46; <br>
+              if (lastDigit(num1) == lastDigit(num2) <br>
+               && lastDigit(num2) == lastDigit(num3)) return true; <br>
+              return false; <br>
+              <br>
+              function lastDigit(num) { <br>
+                while (num > 10) { <br>
+                  num %= 10; <br>
+                } <br>
+                return num; <br>
+              } <br>
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">37. Create new string with first 3 characters 
+              are in lower case from a given string. If the string is less than 
+              3 convert all the characters in upper case.
+            </h2>
+            <code>
+              let str = "hello"; <br>
+              if (str.length <= 3) return str.toUpperCase(); <br>
+              else return str.substring(0, 3).toLowerCase() <br>
+                        + str.substring(3, str.length).toUpperCase();
+            </code>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="p-4 mb-4 border-top d-flex justify-content-between">

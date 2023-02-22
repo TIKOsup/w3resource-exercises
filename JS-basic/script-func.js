@@ -161,3 +161,47 @@ function createIdentityMatrix(n) {
     }
     return res;
 }
+
+// ex11
+function ex11() {
+    let arr = document.getElementById("ex11").value;
+    document.getElementById("ex11-res").value = secondMinMax(arr);
+}
+
+function secondMinMax(arr) {
+    arr = arr.split(",");
+    let min = arr[0], max = arr[0];
+    arr.forEach(function(el) {
+        if (el < min) min = el;
+        if (el > max) max = el;
+    });
+    return min + "," + max;
+}
+
+// ex12
+function ex12() {
+    let n = document.getElementById("ex12").value;
+    document.getElementById("ex12-res").value = isPerfectNum(parseInt(n));
+}
+
+function isPerfectNum(n) {
+    let sum = 0;
+    for (let i = 1; i < n; i++) {
+        if (n % i === 0) sum += i;
+    }
+    return sum === n;
+}
+
+// ex13
+function ex13() {
+    let n = document.getElementById("ex13").value;
+    document.getElementById("ex13-res").value = factors(n);
+}
+
+function factors(n) {
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) arr.push(i);
+    }
+    return arr;
+}

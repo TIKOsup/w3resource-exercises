@@ -90,3 +90,74 @@ function longestWord(str) {
     });
     return arr[maxIndex];
 }
+
+// ex7
+function ex7() {
+    let str = document.getElementById("ex7").value;
+    document.getElementById("ex7-res").value = numOfVowels(str);
+}
+
+function numOfVowels(str) {
+    let vowels = ["a", "e", "i", "o", "u"];
+    let sum = 0;
+    str.split("").forEach(function(word) {
+        if (vowels.includes(word)) sum++;
+    })
+    return sum;
+}
+
+// ex8
+function ex8() {
+    let num = document.getElementById("ex8").value;
+    document.getElementById("ex8-res").value = isPrime(num);
+}
+
+function isPrime(num) {
+    num *= 1;
+    if (num === 1) return false;
+    else if (num === 2) return true;
+    else {
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    }
+}
+
+// ex9
+function ex9() {
+    let val = document.getElementById("ex9").value;
+    document.getElementById("ex9-res").value = getType(val);
+}
+
+function getType(val) {
+    return typeof parseInt(val);
+}
+
+// ex10
+function ex10() {
+    let n = document.getElementById("ex10").value;
+    let res = document.getElementById("ex10-res");
+    let child = res.lastElementChild;
+    while (child) {
+        res.removeChild(child);
+        child = res.lastElementChild;
+    }
+    createIdentityMatrix(n).split(",").forEach(function(row) {
+        res.appendChild(document.createElement("p")).innerHTML = row;
+    })
+}
+
+function createIdentityMatrix(n) {
+    let res = "", str = "";
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (str !== "") str += " ";
+            if (i === j) str += "1";
+            else str += "0";
+        }
+        res = res + str + ",";
+        str = "";
+    }
+    return res;
+}

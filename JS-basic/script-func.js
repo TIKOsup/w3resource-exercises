@@ -51,3 +51,42 @@ function getStrComb(str) {
     }
     return res;
 }
+
+// ex4
+function ex4() {
+    let str = document.getElementById("ex4").value;
+    document.getElementById("ex4-res").value = sortStr(str);
+}
+
+function sortStr(str) {
+    return str.split("").sort().join("");
+}
+
+// ex5
+function ex5() {
+    let str = document.getElementById("ex5").value;
+    document.getElementById("ex5-res").value = capitalize(str);
+}
+
+function capitalize(str) {
+    let res = [];
+    str.split(" ").forEach(function(substr) {
+        res.push(substr.charAt(0).toUpperCase() + substr.slice(1));
+    });
+    return res.join(" ");
+}
+
+// ex6
+function ex6() {
+    let str = document.getElementById("ex6").value;
+    document.getElementById("ex6-res").value = longestWord(str);
+}
+
+function longestWord(str) {
+    let arr = str.split(" ");
+    let maxIndex = 0;
+    arr.forEach(function(substr, index) {
+        if (substr.length > arr[maxIndex].length) maxIndex = index;
+    });
+    return arr[maxIndex];
+}

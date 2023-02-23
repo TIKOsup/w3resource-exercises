@@ -205,3 +205,44 @@ function factors(n) {
     }
     return arr;
 }
+
+// ex14
+function ex14() {
+    let n = document.getElementById("ex14").value;
+    document.getElementById("ex14-res").value = toCoins(n);
+}
+
+function toCoins(n) {
+    let coins = [100, 50, 20, 10, 5, 2, 1];
+    let res = [];
+    let i = 0;
+    while (n > 0) {
+        let coinNum = parseInt(n / coins[i]);
+        n -= coins[i] * coinNum;
+        for (let j = 0; j < coinNum; j++) res.push(coins[i]);
+        i++;
+    }
+    return res;
+}
+
+// ex15
+function ex15() {
+    let n = document.getElementById("ex15-1").value;
+    let b = document.getElementById("ex15-2").value;
+    document.getElementById("ex15-res").value = Math.pow(b, n);
+}
+
+// ex16
+function ex16() {
+    let str = document.getElementById("ex16").value;
+    document.getElementById("ex16-res").value = uniqueStr(str);
+}
+
+function uniqueStr(str) {
+    const mySet = new Set(str);
+    let res = "";
+    mySet.forEach(function(value) {
+        res += value;
+    })
+    return res;
+}

@@ -246,3 +246,63 @@ function uniqueStr(str) {
     })
     return res;
 }
+
+// ex17
+function ex17() {
+    let str = document.getElementById("ex17").value;
+    document.getElementById("ex17-res").value = numOfOccurr(str);
+}
+
+function numOfOccurr(str) {
+    const myMap = new Map();
+    str.replaceAll(" ", "").split("").forEach(function(word) {
+        if (myMap.has(word)) myMap.set(word, myMap.get(word) + 1);
+        else {
+            myMap.set(word, 1);
+        }
+    });
+    let res = "";
+    myMap.forEach(function(value, key) {
+        if (res !== "") res += ", ";
+        res += key + ":" + value;
+    });
+    return res;
+}
+
+// ex18
+function ex18() {
+    let arr = document.getElementById("ex18-1").value;
+    let num = document.getElementById("ex18-2").value;
+    arr = arr.split(",").sort((a, b) => a - b);
+    document.getElementById("ex18-res").value = binarySearch(arr, num);
+}
+
+function binarySearch(arr, num) {
+    let mid = Math.floor(arr.length / 2);
+
+    if (arr[mid] === num) return mid;
+    else if (arr.length === 1) return null;
+    else if (arr[mid] < num) {
+        arr = arr.slice(mid + 1);
+        let res = binarySearch(arr, num);
+        if  (res === null) return null;
+        else return mid + 1 + res;
+    }
+    else {
+        arr = arr.slice(0, mid);
+        return binarySearch(arr, num);
+    }
+}
+
+// ex19
+function ex19() {
+    let arr = document.getElementById("ex19-1").value;
+    let num = document.getElementById("ex19-2").value;
+    document.getElementById("ex19-res").value = arr.split(",").filter(largerElements(num));
+}
+
+function largerElements(num) {
+    return function(val, index, arr) {
+        return (val >= parseInt(num));
+    };
+}

@@ -408,6 +408,48 @@
             </code>
           </div>
         </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">38. Check the total marks of a student in various 
+              examinations. The student will get A+ grade if the total marks 
+              are in the range 89..100 inclusive, if the examination is 
+              "Final-exam." The student will get A+ grade and total marks 
+              must be greater than or equal to 90.</h2>
+            <code>
+              function isGradeAPlus(total, isFinal) { <br>
+                if (isFinal) return total >= 90; <br>
+                return (total >= 89 && total <= 100); <br>
+              }
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">39. Compute the sum of the two given integers.
+              If the sum is in the range 50..80 return 65 otherwise return 80.</h2>
+            <code>
+              function sumOfTwoInt(num1, num2) { <br>
+                let sum = num1 + num2;
+                if (sum >= 50 && sum <= 80) return 65; <br>
+                return 80; <br>
+              }
+            </code>
+          </div>
+        </section>
+        <section class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="h-100 p-4 bg-light rounded-3">
+            <h2 class="fs-6">40. Check from two given int whether one of them 
+              is 8 or their sum or difference is 8.</h2>
+            <code>
+              function checkEight(num1, num2) { <br>
+                return ((num1 === 8 && num2 !== 8) <br>
+                     || (num2 === 8 && num1 !== 8) <br>
+                     || (num1 + num2 === 8) <br>
+                     || (Math.abs(num1 - num2) === 8)) <br>
+              }
+            </code>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="p-4 mb-4 border-top d-flex justify-content-between">

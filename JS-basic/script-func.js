@@ -306,3 +306,18 @@ function largerElements(num) {
         return (val >= parseInt(num));
     };
 }
+
+// ex20
+function ex20() {
+    let n = document.getElementById("ex20").value;
+    document.getElementById("ex20-res").value = randomString(n);
+}
+
+function randomString(n) {
+    let charList = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let res = "";
+    for (let i = 0; i < n; i++) {
+        res += charList[Math.floor(Math.random() * charList.length)];
+    }
+    return res;
+}
